@@ -1,0 +1,14 @@
+development: &default
+  adapter: mysql2
+  host: localhost
+  port: 3306
+  encoding: utf8
+  database: media_server
+  username: root
+  password:
+  pool: 5
+  timeout: 5000
+
+test:
+  <<: *default
+  database: media_server_test
